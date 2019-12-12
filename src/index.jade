@@ -1,4 +1,474 @@
 extends _layouts/base
 
+include ./_modules/slider/slider
+
 block content
     main.home
+        section.home__hero
+            .container
+                .row
+                    .col-24.col-md-12
+                        .home__hero__container.home__hero__container--left
+                            .home__hero__title
+                                img(src="/images/card-icon.png")
+                                h3 Grupo Vip de tradeos de fut<br>de NIco The Striker y Whiteback
+                            +slider('home__hero__slider')
+                                .home__hero__slide
+                                    p Aprende a tradear en ultimate team de la mano de los mejores tradeadores de España.
+                                .home__hero__slide
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                .home__hero__slide
+                                    p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            a.home__hero__button(href="#") únete ahora
+                    .col-24.col-md-12
+                        .home__hero__container
+                            .home__hero__image
+                                img(src="/images/hero.png")
+                            .home__hero__wrapper
+                                .home__hero__group
+                                    .home__hero__user-group
+                                        p.home__hero__text.home__hero__text--yellow Usuario:
+                                        p.home__hero__text userAtFifaPlay
+                                    .home__hero__user-group
+                                        p.home__hero__text.home__hero__text--yellow Transfer profit:
+                                        p.home__hero__text 18.556.782
+                                a.home__hero__wrapper-button(href="#testimonios") qué dicen los usuarios
+    
+        section.home__vip#vip
+            .container
+                .row
+                    .col-24.col-md-12
+                        .home__vip__container
+                            h2.home__vip__title Sobre el VIP
+                            h3.home__vip__subtitle CANSADO DE EA SPORTS Y LOS FIFA POINTS?
+                            p.home__vip__text ¿Cansado de añadir cientos y cientos de euros o dólares en FIFA, abriendo sobres por doquier, y no obtener un buen resultado monetario
+                            p.home__vip__text Únete ya al PREMIUM de Whiteback y NikoTheStriker para ganar monedas sin necesidad de comprar FIFA Point
+                            p.home__vip__text El objetivo de cada jugador en FUT es conseguir el mejor equipo posible. Todos siempre hemos querido tener los mejores iconos (Ronaldo, Pelé, Zidane, Cruyff), los mejores jugadores del videojuego (Cristiano, Neymar, Messi, Mbappé) pero por mucho que añadimos FIFA Points siempre acabamos con un equipo bastante indeseable. ¿Quieres tener muchas monedas en tu contador y un gran equipo que te permita conseguir mejores resultados en FUT Champions? Contrata ya el <strong>PREMIUM</strong> de White X Niko y disfruta de los mejores tradeos diarios, de los mejores filtros de sniping, de increíbles inversiones semanales y de un ambiente perfecto que te hará disfrutar del trading en FUT.
+                            p.home__vip__text ¿Para qué gastarse 20€ en FIFA Points cuando por ese mismo precio obtienes la posibilidad de duplicar e incluso triplicar tus monedas con el Premium de White y Niko? Únete ya y gana monedas como nunca lo habías hecho.
+
+                    .col-24.col-md-12
+                        .home__vip__bios
+                            h3.home__vip__bios-title BIO
+                            .home__vip__bios-container
+                                .home__vip__bio.home__vip__bio--left
+                                    .home__vip__bio-wrapper
+                                        .home__vip__bio-image
+                                            img(src="https://picsum.photos/id/237/1200/1100")
+                                    p.home__vip__bio-name WHITEBACK
+                                    ul.home__vip__bio-social
+                                        .home__vip__bio-item
+                                            a(href="#")
+                                                i.fa.fa-instagram
+                                        .home__vip__bio-item
+                                            a(href="#")
+                                                i.fa.fa-youtube-play
+                                        .home__vip__bio-item
+                                            a(href="#")
+                                                i.fa.fa-twitch
+                                .home__vip__bio.home__vip__bio--right
+                                    .home__vip__bio-wrapper
+                                        .home__vip__bio-image
+                                            img(src="https://picsum.photos/id/238/1200/1100")
+                                    p.home__vip__bio-name NicoTheStriker
+                                    ul.home__vip__bio-social
+                                        .home__vip__bio-item
+                                            a(href="#")
+                                                i.fa.fa-instagram
+                                        .home__vip__bio-item
+                                            a(href="#")
+                                                i.fa.fa-youtube-play
+                                        .home__vip__bio-item
+                                            a(href="#")
+                                                i.fa.fa-twitch
+                            .home__vip__controls
+                                .home__vip__arrow.home__vip__arrow--left
+                                    svg(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 24 24')
+                                        path(d='M21 12l-18 12v-24z' fill= "#FFD200")
+                                .home__vip__arrow
+                                    svg(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 24 24')
+                                        path(d='M21 12l-18 12v-24z' fill= "#FFD200")
+
+        section.home__ventajas#ventajas
+            .container
+                .row
+                    .col-24
+                        h2.home__ventajas__title Ventajas
+                    .col-24.col-md-8
+                        ul.home__ventajas__list
+                            li.home__ventajas__item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            li.home__ventajas__item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            li.home__ventajas__item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    .col-24.col-md-8
+                        ul.home__ventajas__list
+                            li.home__ventajas__item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            li.home__ventajas__item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            li.home__ventajas__item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    .col-24.col-md-8
+                        ul.home__ventajas__list.home__ventajas__list--sm-bottom
+                            li.home__ventajas__item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            li.home__ventajas__item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            li.home__ventajas__item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    .col-24
+                        a.home__ventajas__button(href="#") únete ahora
+
+        section.home__testimonios
+            .container
+                .row
+                    .col-24
+                        h2.home__testimonios__title testimonios
+                    .col-24
+                        +slider('home__testimonios__slider')
+                            .home__testimonios__slide
+                                .home__testimonios__wrapper
+                                    .home__testimonios__image
+                                        img(src="/images/messi-icon.png")
+                                    .home__testimonios__content
+                                        p.home__testimonios__text Que manera de forrarse!! Cada evento se prepara y te dan la estrategia a seguir, gracias al VIP me hice un equipo con jugadores top e iconos que nunca pude tener en fifa 19
+                                        .home__testimonios__user-group
+                                            p.home__testimonios__group-text.home__testimonios__group-text--yellow Usuario:
+                                            p.home__testimonios__group-text userAtFifaPlay
+                                        .home__testimonios__user-group
+                                            p.home__testimonios__group-text.home__testimonios__group-text--yellow Transfer profit:
+                                            p.home__testimonios__group-text 18.556.782
+
+                            .home__testimonios__slide
+                                .home__testimonios__wrapper
+                                    .home__testimonios__image
+                                        img(src="/images/hazard-icon.png")
+                                    .home__testimonios__content
+                                        p.home__testimonios__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        .home__testimonios__user-group
+                                            p.home__testimonios__group-text.home__testimonios__group-text--yellow Usuario:
+                                            p.home__testimonios__group-text userAtFifaPlay
+                                        .home__testimonios__user-group
+                                            p.home__testimonios__group-text.home__testimonios__group-text--yellow Transfer profit:
+                                            p.home__testimonios__group-text 18.556.782
+
+        section.home__ranking
+            .home__ranking__side-image
+                img(src="https://picsum.photos/id/237/1200/1100")
+            .container
+                .row
+                    .col-24
+                        h2.home__ranking__title Ranking
+                    .col-24.col-md-18
+                        .home__ranking__heading
+                            .home__ranking__tab(data-target="semanal")
+                                p Semanal
+                            .home__ranking__tab(data-target="mensual")
+                                p Mensual
+
+                        .home__ranking__container
+                            .home__ranking__wrapper(data-content="semanal")
+                                .row
+                                    .col-24.col-md-8
+                                        .row
+                                            .col-24
+                                                .home__ranking__group
+                                                    .home__ranking__image
+                                                        img(src="/images/first-icon.png")
+                                                    .home__ranking__content
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Usuario:
+                                                            p.home__ranking__group-text userAtFifaPlay
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Transfer profit:
+                                                            p.home__ranking__group-text 18.556.782
+                                            .col-24
+                                                .home__ranking__group
+                                                    .home__ranking__image
+                                                        img(src="/images/second-icon.png")
+                                                    .home__ranking__content
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Usuario:
+                                                            p.home__ranking__group-text userAtFifaPlay
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Transfer profit:
+                                                            p.home__ranking__group-text 18.556.782
+                                            .col-24
+                                                .home__ranking__group
+                                                    .home__ranking__image
+                                                        img(src="/images/second-icon.png")
+                                                    .home__ranking__content
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Usuario:
+                                                            p.home__ranking__group-text userAtFifaPlay
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Transfer profit:
+                                                            p.home__ranking__group-text 18.556.782
+
+                                    .col-24.col-md-8
+                                        .row
+                                            .col-24
+                                                .home__ranking__group
+                                                    .home__ranking__index
+                                                        span 4
+                                                    .home__ranking__content
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Usuario:
+                                                            p.home__ranking__group-text userAtFifaPlay
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Transfer profit:
+                                                            p.home__ranking__group-text 18.556.782
+                                            .col-24
+                                                .home__ranking__group
+                                                    .home__ranking__index
+                                                        span 5
+                                                    .home__ranking__content
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Usuario:
+                                                            p.home__ranking__group-text userAtFifaPlay
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Transfer profit:
+                                                            p.home__ranking__group-text 18.556.782
+                                            .col-24
+                                                .home__ranking__group
+                                                    .home__ranking__index
+                                                        span 6
+                                                    .home__ranking__content
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Usuario:
+                                                            p.home__ranking__group-text userAtFifaPlay
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Transfer profit:
+                                                            p.home__ranking__group-text 18.556.782
+                                            .col-24
+                                                .home__ranking__group
+                                                    .home__ranking__index
+                                                        span 7
+                                                    .home__ranking__content
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Usuario:
+                                                            p.home__ranking__group-text userAtFifaPlay
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Transfer profit:
+                                                            p.home__ranking__group-text 18.556.782
+
+                                    .col-24.col-md-8
+                                        .row
+                                            .col-24
+                                                .home__ranking__group
+                                                    .home__ranking__index
+                                                        span 8
+                                                    .home__ranking__content
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Usuario:
+                                                            p.home__ranking__group-text userAtFifaPlay
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Transfer profit:
+                                                            p.home__ranking__group-text 18.556.782
+                                            .col-24
+                                                .home__ranking__group
+                                                    .home__ranking__index
+                                                        span 9
+                                                    .home__ranking__content
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Usuario:
+                                                            p.home__ranking__group-text userAtFifaPlay
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Transfer profit:
+                                                            p.home__ranking__group-text 18.556.782
+                                            .col-24
+                                                .home__ranking__group
+                                                    .home__ranking__index
+                                                        span 10
+                                                    .home__ranking__content
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Usuario:
+                                                            p.home__ranking__group-text userAtFifaPlay
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Transfer profit:
+                                                            p.home__ranking__group-text 18.556.782
+
+                            .home__ranking__wrapper(data-content="mensual")
+                                .row
+                                    .col-24.col-md-8
+                                        .row
+                                            .col-24
+                                                .home__ranking__group
+                                                    .home__ranking__image
+                                                        img(src="/images/first-icon.png")
+                                                    .home__ranking__content
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Usuario:
+                                                            p.home__ranking__group-text userAtFifaPlay2
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Transfer profit:
+                                                            p.home__ranking__group-text 18.556.782
+                                            .col-24
+                                                .home__ranking__group
+                                                    .home__ranking__image
+                                                        img(src="/images/second-icon.png")
+                                                    .home__ranking__content
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Usuario:
+                                                            p.home__ranking__group-text userAtFifaPlay2
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Transfer profit:
+                                                            p.home__ranking__group-text 18.556.782
+                                            .col-24
+                                                .home__ranking__group
+                                                    .home__ranking__image
+                                                        img(src="/images/second-icon.png")
+                                                    .home__ranking__content
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Usuario:
+                                                            p.home__ranking__group-text userAtFifaPlay2
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Transfer profit:
+                                                            p.home__ranking__group-text 18.556.782
+
+                                    .col-24.col-md-8
+                                        .row
+                                            .col-24
+                                                .home__ranking__group
+                                                    .home__ranking__index
+                                                        span 4
+                                                    .home__ranking__content
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Usuario:
+                                                            p.home__ranking__group-text userAtFifaPlay2
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Transfer profit:
+                                                            p.home__ranking__group-text 18.556.782
+                                            .col-24
+                                                .home__ranking__group
+                                                    .home__ranking__index
+                                                        span 5
+                                                    .home__ranking__content
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Usuario:
+                                                            p.home__ranking__group-text userAtFifaPlay2
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Transfer profit:
+                                                            p.home__ranking__group-text 18.556.782
+                                            .col-24
+                                                .home__ranking__group
+                                                    .home__ranking__index
+                                                        span 6
+                                                    .home__ranking__content
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Usuario:
+                                                            p.home__ranking__group-text userAtFifaPlay2
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Transfer profit:
+                                                            p.home__ranking__group-text 18.556.782
+                                            .col-24
+                                                .home__ranking__group
+                                                    .home__ranking__index
+                                                        span 7
+                                                    .home__ranking__content
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Usuario:
+                                                            p.home__ranking__group-text userAtFifaPlay2
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Transfer profit:
+                                                            p.home__ranking__group-text 18.556.782
+
+                                    .col-24.col-md-8
+                                        .row
+                                            .col-24
+                                                .home__ranking__group
+                                                    .home__ranking__index
+                                                        span 8
+                                                    .home__ranking__content
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Usuario:
+                                                            p.home__ranking__group-text userAtFifaPlay2
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Transfer profit:
+                                                            p.home__ranking__group-text 18.556.782
+                                            .col-24
+                                                .home__ranking__group
+                                                    .home__ranking__index
+                                                        span 9
+                                                    .home__ranking__content
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Usuario:
+                                                            p.home__ranking__group-text userAtFifaPlay2
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Transfer profit:
+                                                            p.home__ranking__group-text 18.556.782
+                                            .col-24
+                                                .home__ranking__group
+                                                    .home__ranking__index
+                                                        span 10
+                                                    .home__ranking__content
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Usuario:
+                                                            p.home__ranking__group-text userAtFifaPlay2
+                                                        .home__ranking__user-group
+                                                            p.home__ranking__group-text.home__ranking__group-text--red Transfer profit:
+                                                            p.home__ranking__group-text 18.556.782
+
+        section.home__plantillas
+            .container
+                .row
+                    .col-24
+                        .home__plantillas__title Plantillas <br><span>de los usuarios</span>
+                    .col-24.col-md-12
+                        .home__plantillas__main-image
+                            img(src="/images/squad.png")
+                        .home__plantillas__content
+                            .home__plantillas__group
+                                .home__plantillas__user-group
+                                    p.home__plantillas__text.home__plantillas__text--red Usuario:
+                                    p.home__plantillas__text userAtFifaPlay
+                                .home__plantillas__user-group
+                                    p.home__plantillas__text.home__plantillas__text--red Transfer profit:
+                                    p.home__plantillas__text 18.556.782
+                            .home__plantillas__rank
+                                p.home__plantillas__text.home__plantillas__text--red Valoracion:
+                                .home__plantillas__value
+                                    span 187
+                    .col-24.col-md-12
+                        .row
+                            .col-12.col-md-8
+                                .home__plantillas__image
+                                    img(src="/images/squad1.png")
+
+                            .col-12.col-md-8
+                                .home__plantillas__image
+                                    img(src="/images/squad2.png")
+
+                            .col-12.col-md-8
+                                .home__plantillas__image
+                                    img(src="/images/squad1.png")
+
+                            .col-12.col-md-8
+                                .home__plantillas__image
+                                    img(src="/images/squad2.png")
+
+                            .col-12.col-md-8
+                                .home__plantillas__image
+                                    img(src="/images/squad1.png")
+
+                            .col-12.col-md-8
+                                .home__plantillas__image
+                                    img(src="/images/squad2.png")
+
+                            .col-12.col-md-8
+                                .home__plantillas__image
+                                    img(src="/images/squad1.png")
+
+                            .col-12.col-md-8
+                                .home__plantillas__image
+                                    img(src="/images/squad2.png")
+
+                            .col-12.col-md-8
+                                .home__plantillas__image
+                                    img(src="/images/squad1.png")
+
+                            .col-12.col-md-8
+                                .home__plantillas__image
+                                    img(src="/images/squad2.png")
+
+                            .col-12.col-md-8
+                                .home__plantillas__image
+                                    img(src="/images/squad1.png")
+
+                            .col-12.col-md-8
+                                .home__plantillas__image
+                                    img(src="/images/squad2.png")
+
+

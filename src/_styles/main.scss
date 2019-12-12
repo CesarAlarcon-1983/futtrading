@@ -23,7 +23,11 @@ body {
     font-size: $sm;
 }
 
-a {
+main {
+  padding-top: 15vh;
+}
+
+a, button, i {
     color:$link;
     transition: all $duration $easingLight;
 

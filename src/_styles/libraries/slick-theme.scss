@@ -107,13 +107,23 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
-    left: 20px;
+    left: -100px;
+
     [dir="rtl"] & {
         left: auto;
         right: 10px;
     }
     &:before {
-        content: $slick-prev-character;
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 30px;
+        height: 30px;
+        border-left: 2px solid $white;
+        border-bottom: 2px solid $white;
+        transform: translate3d(-50%, -50%, 0) rotate(45deg);
+
         [dir="rtl"] & {
             content: $slick-next-character;
         }
@@ -121,13 +131,22 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-next {
-    right: 20px;
+    right: -100px;
     [dir="rtl"] & {
         left: 10px;
         right: auto;
     }
     &:before {
-        content: $slick-next-character;
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 30px;
+        height: 30px;
+        border-right: 2px solid $white;
+        border-bottom: 2px solid $white;
+        transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+
         [dir="rtl"] & {
             content: $slick-prev-character;
         }
@@ -142,7 +161,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-dots {
     position: absolute;
-    bottom: 50px;
+    bottom: 0;
     list-style: none;
     display: block;
     text-align: center;
@@ -151,6 +170,7 @@ $slick-opacity-not-active: 0.25 !default;
     //width: 100%;
     left: 50%;
     transform: translateX(-50%);
+    
     li {
         position: relative;
         display: inline-block;
