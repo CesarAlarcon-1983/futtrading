@@ -19,6 +19,10 @@
 
     &__logo {
         z-index: 2000;
+
+        img {
+          width: 100%;
+        }
     }
 
     &__wrapper {
@@ -109,6 +113,7 @@
         font-weight: 700;
         font-size: 14px;
         padding: 0;
+        text-decoration: none;
         // margin-bottom: 10px;
 
         @include mq(md) {

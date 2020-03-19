@@ -4,7 +4,7 @@
     &__hero {
         // height: 85vh;
         padding: 30px 0;
-        background: $black;
+        background: $black url('../images/home/hero.jpg');
 
         @include mq(md) {
             padding: 30px 0 100px 0;
@@ -113,6 +113,11 @@
             @include mq(md) {
                 width: 50%;
             }
+
+            &:hover {
+              color: $black;
+              background: darken($yellow, 10%);
+            }
         }
 
         &__image {
@@ -122,7 +127,6 @@
             overflow: hidden;
             position: relative;
             border-radius: 5px;
-            background: $black;
             margin-bottom: 20px;
 
             img {
@@ -194,7 +198,7 @@
     }
 
     &__vip {
-        background: $lightGray;
+        background: $lightGray url('../images/home/nosotros.jpg') no-repeat center center / cover;
         padding: 50px 0;
         position: relative;
 
@@ -207,13 +211,19 @@
 
         &__title {
             font-size: 50px;
-            font-weight: 900;
+            font-weight: 700;
             text-transform: uppercase;
             margin: 0;
             margin-bottom: 50px;
 
             @include mq(md) {
                 font-size: 60px;
+            }
+
+            span {
+              font-family: $altFont;
+              font-weight: 300;
+              font-size: 1.8em;
             }
         }
 
@@ -362,7 +372,7 @@
                 top: 50%;
                 left: 50%;
                 transform: translate3d(-50%, -50%, 0);
-                padding: 20px;
+                width: 100%;
             }
         }
 
@@ -380,6 +390,12 @@
 
         &__bio-social {
             display: flex;
+
+            a{
+              &:hover i{
+                color: $red;
+              }
+            }
         }
 
         &__bio-item {
@@ -437,7 +453,7 @@
     }
 
     &__ventajas {
-        background: $red;
+        background: $red url('../images/home/ventajas.jpg') no-repeat center center / cover;
         padding: 50px 0;
 
         @include mq(md) {
@@ -451,7 +467,13 @@
             margin-bottom: 50px;
 
             @include mq(md) {
-                margin-bottom: 100px;
+                margin-bottom: 70px;
+            }
+
+            span {
+              font-family: $altFont;
+              font-size: 1.8em;
+              font-weight: 300;
             }
         }
 
@@ -486,6 +508,7 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
+            margin-top: 50px;
             height: 50px;
             line-height: 50px;
             background: $yellow;
@@ -501,11 +524,16 @@
             @include mq(md) {
                 width: 20%;
             }
+
+            &:hover {
+              color: $black;
+              background: darken($yellow, 10%);
+            }
         }
     }
 
     &__testimonios {
-        background: $corpBlack;
+        background: $corpBlack url('../images/home/testimonios.jpg');
         padding: 50px 0;
 
         @include mq(md) {
@@ -521,6 +549,12 @@
 
             @include mq(md) {
                 font-size: 60px;
+            }
+
+            span {
+              font-family: $altFont;
+              font-size: 1.8em;
+              font-weight: 300;
             }
         }
 

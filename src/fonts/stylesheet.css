@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Another America';
+    src: url('AnotherAmerica.eot');
+    src: url('AnotherAmerica.eot?#iefix') format('embedded-opentype'),
+        url('AnotherAmerica.woff2') format('woff2'),
+        url('AnotherAmerica.woff') format('woff'),
+        url('AnotherAmerica.ttf') format('truetype'),
+        url('AnotherAmerica.svg#AnotherAmerica') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

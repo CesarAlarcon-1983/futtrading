@@ -1,3 +1,17 @@
 .footer {
-    
+    padding: 50px 0;
+    background:$lightGray;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $mainFont;
+    font-weight: 700;
+
+    &__disclaimer {
+      font-size: 14px;
+      color: $darkestGray;
+      margin: 0;
+      margin-right: 5px;
+    }
 }

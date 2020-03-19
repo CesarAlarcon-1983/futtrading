@@ -1,3 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap');
 
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+@font-face {
+  font-family: 'Another America';
+  src: url('../fonts/AnotherAmerica.eot');
+  src: url('../fonts/AnotherAmerica.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/AnotherAmerica.woff2') format('woff2'),
+      url('../fonts/AnotherAmerica.woff') format('woff'),
+      url('../fonts/AnotherAmerica.ttf') format('truetype'),
+      url('../fonts/AnotherAmerica.svg#AnotherAmerica') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
